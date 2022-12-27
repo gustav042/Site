@@ -11,9 +11,33 @@ body{
     color: black;
     background: pink;
     text-align: center;
-    width: 1010px; height:500px; margin: 0 auto;
+    width: infinite; height:500px; margin: 0 auto;
     font-family: 'Nunito', sans-serif;
 
+}
+
+
+header {
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+    padding: 15px;
+    width: infinite;
+    height: 80px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.139);
+}
+
+section {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 15px;
+    width: 970px;
+    height: 628px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.139);
 }
 
 .parent{
@@ -25,9 +49,11 @@ body{
     vertical-align: middle;
 }
 
+
 #produtos{
     display: inline-block;
     flex-basis: 0%;
+    
 }
 
 #produtos:hover{

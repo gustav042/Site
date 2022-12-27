@@ -23,10 +23,14 @@ body{
 }
 
 #imgs{
-    width:215px;
-    border: 5px solid white;
+    width:200px;
+    border: 5px solid #ffffff;
     margin: 5px;
     
+}
+
+#imgs:hover{
+    transform: scale(1.07, 1.07);
 }
 
 .scroll1{
@@ -37,6 +41,7 @@ body{
     overflow-x: auto;
     overscroll-behavior-inline: contain;
 }
+  
 
 .scroll2{
     display: grid;
