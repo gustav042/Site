@@ -10,6 +10,32 @@ body{
 
 }
 
+header {
+    
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+    padding: 15px;
+    width: 875px;
+    height: 100px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.139);
+}
+
+h2{
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+    padding: 15px;
+    width: 960px;
+    height: 40px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.139);
+
+}
+
 #top{
     text-align: center;
 }
