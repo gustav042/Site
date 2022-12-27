@@ -1,0 +1,52 @@
+
+body{
+    font-size: 20px;
+    color: black;
+    background: pink;
+    text-align: center;
+    width: 1010px; height:500px; 
+    margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+h2{
+    background: rgb(255, 255, 255);
+    width: 500px;
+    height: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.139);
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.media{
+    text-align: center;
+    display: grid;
+    width: 500px;
+    grid-template-rows: min-content;
+    padding: 10px;
+}
+
+.media img{
+    display: block;
+    margin: 0 auto;
+}
+
+img{
+    width:480px;
+    border: 10px solid #ffffff;
+    margin: 5px;
+    }
+
+img:hover{
+    transform: scale(1.07, 1.07);
+}
+
+.scroll1{
+    overflow-x: auto;
+    display: grid;
+    gap: 320px;
+    grid-auto-flow: column;
+    grid-auto-columns: 23%;
+    overscroll-behavior-inline: contain;
+}

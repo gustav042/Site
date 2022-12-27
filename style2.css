@@ -4,6 +4,15 @@ h1{
     font-family: 'Quicksand', sans-serif;    color: white;
     color: rgb(0, 0, 0);
     font-size: 50px;
+
+}
+
+#title{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 body{
@@ -18,26 +27,26 @@ body{
 
 
 header {
+    
     background-color: white;
     text-align: center;
     vertical-align: middle;
     border-radius: 10px;
     padding: 15px;
-    width: infinite;
+    width: 875px;
     height: 80px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.139);
 }
 
 section {
-    background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     border-radius: 10px;
     padding: 15px;
-    width: 970px;
+    width: 900px;
     height: 628px;
     margin: auto;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.139);
+    align-content: center;
 }
 
 .parent{
@@ -51,9 +60,8 @@ section {
 
 
 #produtos{
-    display: inline-block;
-    flex-basis: 0%;
-    
+    display: inline-block;    
+    padding: 5px;
 }
 
 #produtos:hover{
@@ -62,7 +70,7 @@ section {
 
 #destaques{
     display: inline-block;
-    flex-basis: 0%;
+    padding: 5px;
 }
 
 #destaques:hover{
