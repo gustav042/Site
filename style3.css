@@ -7,32 +7,24 @@ body{
     width: 1010px; height:500px; 
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
-    color: rgb(185, 90, 106);
-    display: flex;
-    flex-direction: column;
-
+    
 }
 
-header {
-    
-    background-color: white;
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 10px;
-    padding: 15px;
-    width: 55rem;
-    height: 100px;
-    margin: auto;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.139);
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h2{
-    background-color: white;
+    margin-top: 10px;
+    background-color: #ffffff;
     text-align: center;
     vertical-align: middle;
     border-radius: 10px;
     padding: 15px;
-    width: 960px;
+    width: 62rem;
     height: 40px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.139);
@@ -47,11 +39,6 @@ h2{
     margin-top: 25px;
 
     margin-bottom: 25px;
-    /* text-align: center;
-    display: grid;
-    width: 500px;
-    grid-template-rows: min-content;
-    padding: 10px; */
 }
 
 .media img{
@@ -77,13 +64,6 @@ img:hover{
     display: flex;
     scroll-snap-type: x mandatory;
     gap: 50px;
-
-    /* overflow-x: auto;
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 23%;
-    overscroll-behavior-inline: contain;
-} */
 }
 
 .scroll1 .media{
@@ -104,13 +84,4 @@ img:hover{
   background: #ffffff;
   border-radius: 25px;
 }
-  
-
-.scroll2{
-    display: grid;
-    gap: var(--size-5);
-    grid-auto-flow: column;
-    grid-auto-columns: 23%;
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
-}
+ 

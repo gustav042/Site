@@ -53,14 +53,6 @@ h2{
     vertical-align: middle;
 }
 
-.media{
-    /* text-align: center;
-    display: grid;
-    width: 500px;
-    grid-template-rows: min-content;
-    padding: 10px; */
-}
-
 .media img{
     display: block;
     margin: 0 auto;
