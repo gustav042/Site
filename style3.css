@@ -1,12 +1,15 @@
 
 body{
     font-size: 20px;
-    color: black;
+    color: rgb(185, 90, 106);
     background: pink;
     text-align: center;
     width: 1010px; height:500px; 
     margin: 0 auto;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(185, 90, 106);
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -17,7 +20,7 @@ header {
     vertical-align: middle;
     border-radius: 10px;
     padding: 15px;
-    width: 875px;
+    width: 55rem;
     height: 100px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.139);
@@ -39,33 +42,67 @@ h2{
 #top{
     text-align: center;
 }
+
 .media{
+    margin-top: 25px;
+
+    margin-bottom: 25px;
+    /* text-align: center;
     display: grid;
-    width: 230px;
+    width: 500px;
     grid-template-rows: min-content;
-    padding: 10px;
-    background: var(--surface-2);
-    border-radius: var(--radius-2);
+    padding: 10px; */
 }
 
-#imgs{
-    width:200px;
-    border: 5px solid #ffffff;
+.media img{
+    display: block;
+    margin: 0 auto;
+}
+
+img{
+    width:210px;
+
+    max-height: 210px;
     margin: 5px;
-    
-}
+    border-radius: 10px;
 
-#imgs:hover{
+    }
+
+img:hover{
     transform: scale(1.07, 1.07);
 }
 
 .scroll1{
+    overflow: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    gap: 50px;
+
+    /* overflow-x: auto;
     display: grid;
-    gap: var(--size-3);
     grid-auto-flow: column;
     grid-auto-columns: 23%;
-    overflow-x: auto;
     overscroll-behavior-inline: contain;
+} */
+}
+
+.scroll1 .media{
+    
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+.scroll1::-webkit-scrollbar {
+    width: 1px; 
+ }
+
+ .scroll1::-webkit-scrollbar-track {
+  background-color: pink;
+}
+
+.scroll1::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 25px;
 }
   
 

@@ -1,18 +1,52 @@
 
 body{
     font-size: 20px;
-    color: black;
+    color: rgb(185, 90, 106);
     background: pink;
     text-align: center;
     width: 1010px; height:500px; 
     margin: 0 auto;
-    font-family: 'Nunito', sans-serif;
-
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+section {
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 15px;
+    width: 60rem;
+    height: 628px;
+    margin: auto;
+    align-content: center;
+}
+header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10rem;
+    width: 60rem;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.139);
+    margin-top: 10px;
+    /* text-align: center;
+    vertical-align: middle;
+    
+    padding: 15px;
+    width: 875px;
+    height: 80px;
+    margin: auto;
+    */
+}
+
 
 h2{
     background: rgb(255, 255, 255);
-    width: 500px;
+    color: rgb(185, 90, 106);
+    width: 480px;
     height: 40px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.139);
     border-radius: 10px;
@@ -20,11 +54,11 @@ h2{
 }
 
 .media{
-    text-align: center;
+    /* text-align: center;
     display: grid;
     width: 500px;
     grid-template-rows: min-content;
-    padding: 10px;
+    padding: 10px; */
 }
 
 .media img{
@@ -34,8 +68,10 @@ h2{
 
 img{
     width:480px;
-    border: 10px solid #ffffff;
+    max-height: 300px;
     margin: 5px;
+    border-radius: 10px;
+
     }
 
 img:hover{
@@ -43,10 +79,34 @@ img:hover{
 }
 
 .scroll1{
-    overflow-x: auto;
+    overflow: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    gap: 50px;
+
+    /* overflow-x: auto;
     display: grid;
-    gap: 320px;
     grid-auto-flow: column;
     grid-auto-columns: 23%;
     overscroll-behavior-inline: contain;
+} */
+}
+
+.scroll1 .media{
+    
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+.scroll1::-webkit-scrollbar {
+    width: 1px; 
+ }
+
+ .scroll1::-webkit-scrollbar-track {
+  background-color: pink;
+}
+
+.scroll1::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 25px;
 }
